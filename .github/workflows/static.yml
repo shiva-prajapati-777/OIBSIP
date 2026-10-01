@@ -29,7 +29,8 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './WebDev-L1-LandingPage'
+          path: './WebDev-L1-PersonalPortfolio'
+
 
       - name: Deploy to GitHub Pages
         id: deployment

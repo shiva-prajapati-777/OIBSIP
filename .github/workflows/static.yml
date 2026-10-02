@@ -1,4 +1,4 @@
-name: Deploy Nexa Landing Page to GitHub Pages
+name: Deploy OIBSIP Websites to GitHub Pages
 
 on:
   push:
@@ -26,12 +26,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare website
+      - name: Prepare website files
         run: |
-          mkdir -p public
+          mkdir -p public/PersonalPortfolio
+          mkdir -p public/TemperatureConverter
 
-          cp -r WebDev-L1-PersonalPortfolio public/PersonalPortfolio
-          cp -r WebDev-L1-Task3-TemperatureConverter public/TemperatureConverter
+          cp -r WebDev-L1-PersonalPortfolio/. public/PersonalPortfolio/
+          cp -r WebDev-L1-TemperatureConverter/. public/TemperatureConverter/
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v4

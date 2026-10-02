@@ -26,11 +26,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare website
+        run: |
+          mkdir -p public
+
+          cp -r WebDev-L1-PersonalPortfolio public/PersonalPortfolio
+          cp -r WebDev-L1-Task3-TemperatureConverter public/TemperatureConverter
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './WebDev-L1-PersonalPortfolio'
-
+          path: './public'
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tempora | Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-temperature-half"></i>
+                </div>
+
+                <div>
+                    <h1>Tempora</h1>
+                    <span>Temperature Converter</span>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span> Live Converter
+            </div>
+        </header>
+
+
+        <!-- Main Card -->
+        <section class="converter-card">
+
+            <div class="card-heading">
+                <span class="small-title">SMART CONVERTER</span>
+
+                <h2>
+                    Convert temperatures
+                    <span>instantly.</span>
+                </h2>
+
+                <p>
+                    Quickly convert between Celsius, Fahrenheit and Kelvin with accurate results.
+                </p>
+            </div>
+
+
+            <!-- Input -->
+            <div class="form-group">
+                <label for="temperature">
+                    <i class="fa-solid fa-pen"></i>
+                    Enter Temperature
+                </label>
+
+                <div class="input-wrapper">
+                    <input type="number" id="temperature" placeholder="Enter value..." step="any">
+
+                    <span class="input-symbol">°</span>
+                </div>
+
+                <p class="error" id="error"></p>
+            </div>
+
+
+            <!-- Units -->
+            <div class="conversion-area">
+
+                <div class="unit-box">
+                    <label for="fromUnit">From</label>
+
+                    <div class="select-wrapper">
+                        <select id="fromUnit">
+                            <option value="C">Celsius (°C)</option>
+                            <option value="F">Fahrenheit (°F)</option>
+                            <option value="K">Kelvin (K)</option>
+                        </select>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+
+                <button class="swap-btn" id="swapBtn" title="Swap units">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+
+                <div class="unit-box">
+                    <label for="toUnit">To</label>
+
+                    <div class="select-wrapper">
+                        <select id="toUnit">
+                            <option value="F">Fahrenheit (°F)</option>
+                            <option value="C">Celsius (°C)</option>
+                            <option value="K">Kelvin (K)</option>
+                        </select>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="convert-btn" id="convertBtn">
+                    <i class="fa-solid fa-bolt"></i>
+                    Convert Temperature
+                </button>
+
+                <button class="clear-btn" id="clearBtn">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Clear
+                </button>
+
+            </div>
+
+
+            <!-- Result -->
+            <div class="result-card" id="resultCard">
+
+                <div class="result-top">
+                    <span>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Conversion Result
+                    </span>
+
+                    <span class="result-badge">
+                        RESULT
+                    </span>
+                </div>
+
+                <div class="result-value" id="resultValue">
+                    <span class="placeholder">Your result will appear here</span>
+                </div>
+
+                <div class="result-line"></div>
+
+                <p id="formula">
+                    Enter a temperature and click Convert.
+                </p>
+
+            </div>
+
+
+            <!-- Quick conversions -->
+            <div class="quick-section">
+
+                <h3>Quick conversions</h3>
+
+                <div class="quick-buttons">
+
+                    <button class="quick-btn" data-value="0" data-from="C" data-to="F">
+                        <span>0°C</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>32°F</span>
+                    </button>
+
+                    <button class="quick-btn" data-value="100" data-from="C" data-to="F">
+                        <span>100°C</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>212°F</span>
+                    </button>
+
+                    <button class="quick-btn" data-value="32" data-from="F" data-to="C">
+                        <span>32°F</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>0°C</span>
+                    </button>
+
+                    <button class="quick-btn" data-value="25" data-from="C" data-to="K">
+                        <span>25°C</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>298.15K</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <i class="fa-solid fa-code"></i> Built with HTML, CSS & JavaScript
+            </p>
+
+            <span>OASIS INFOBYTE · Task 3</span>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

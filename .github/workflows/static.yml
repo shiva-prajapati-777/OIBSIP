@@ -1,4 +1,4 @@
-name: Deploy OIBSIP Websites to GitHub Pages
+name: Deploy Temperature Converter to GitHub Pages
 
 on:
   push:
@@ -26,18 +26,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare website files
-        run: |
-          mkdir -p public/PersonalPortfolio
-          mkdir -p public/TemperatureConverter
-
-          cp -r WebDev-L1-PersonalPortfolio/. public/PersonalPortfolio/
-          cp -r WebDev-L1-TemperatureConverter/. public/TemperatureConverter/
-
-      - name: Upload website
+      - name: Upload Temperature Converter
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './public'
+          path: './WebDev-L1-TemperatureConverter'
 
       - name: Deploy to GitHub Pages
         id: deployment

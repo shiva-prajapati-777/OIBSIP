@@ -4,7 +4,7 @@ A modern, responsive, and interactive calculator built as part of the **OASIS IN
 
 ## 🌐 Live Demo
 
-https://shiva-prajapati-777.github.io/OIBSIP/CalculatorPage/
+https://shiva-prajapati-777.github.io/OIBSIP/Calculator/
 
 ## 📌 Internship Details
 

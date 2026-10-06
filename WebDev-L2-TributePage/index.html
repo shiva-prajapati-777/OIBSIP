@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A modern interactive tribute page dedicated to Dr. A.P.J. Abdul Kalam.">
+
+    <title>Dr. A.P.J. Abdul Kalam | Tribute</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">AK</span>
+                <span>KALAM</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#life" class="nav-link">Life</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#legacy" class="nav-link">Legacy</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-background">
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+
+                <div class="grid-overlay"></div>
+
+                <div class="floating-dot dot-one"></div>
+                <div class="floating-dot dot-two"></div>
+                <div class="floating-dot dot-three"></div>
+            </div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text reveal">
+
+                    <div class="eyebrow">
+                        <span></span> A Tribute to an Indian Visionary
+                    </div>
+
+                    <h1>
+                        Dr. A.P.J.
+                        <span>Abdul Kalam</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Scientist <b>·</b> Statesman <b>·</b> Teacher <b>·</b> Dreamer
+                    </p>
+
+                    <p class="hero-description">
+                        A remarkable scientist and the 11th President of India, remembered for inspiring millions of young minds to dream, learn and build a better future.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#life" class="btn btn-primary">
+                    Explore His Journey
+                    <span>↓</span>
+                </a>
+
+                        <a href="#timeline" class="btn btn-secondary">
+                    View Timeline
+                </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+                        <div>
+                            <strong>1931</strong>
+                            <span>Born</span>
+                        </div>
+
+                        <div class="meta-line"></div>
+
+                        <div>
+                            <strong>2015</strong>
+                            <span>Remembered</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- INTERACTIVE PORTRAIT -->
+
+                <div class="hero-image-wrapper reveal">
+
+                    <div class="image-orbit orbit-one"></div>
+                    <div class="image-orbit orbit-two"></div>
+
+                    <div class="hero-image-card tilt-card" id="tiltCard">
+
+                        <div class="image-top-label">
+                            <span>1931</span>
+                            <span>2015</span>
+                        </div>
+
+                        <div class="image-shine"></div>
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg" alt="Dr. A.P.J. Abdul Kalam" id="kalamImage">
+
+                        <div class="image-caption">
+                            <strong>People's President</strong>
+                            <span>Missile Man of India</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FACTS ================= -->
+
+        <section class="facts-section">
+
+            <div class="container">
+
+                <div class="facts-grid">
+
+                    <article class="fact-card reveal">
+                        <span class="fact-number">1931</span>
+                        <span class="fact-label">Born</span>
+                        <p>Rameswaram, Tamil Nadu</p>
+                    </article>
+
+                    <article class="fact-card reveal">
+                        <span class="fact-number">1980</span>
+                        <span class="fact-label">SLV-III</span>
+                        <p>Satellite launch milestone</p>
+                    </article>
+
+                    <article class="fact-card reveal">
+                        <span class="fact-number">1997</span>
+                        <span class="fact-label">Bharat Ratna</span>
+                        <p>India's highest civilian honour</p>
+                    </article>
+
+                    <article class="fact-card reveal">
+                        <span class="fact-number">2002–07</span>
+                        <span class="fact-label">President</span>
+                        <p>11th President of India</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LIFE ================= -->
+
+        <section class="section life-section" id="life">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">01 / HIS LIFE</span>
+
+                    <h2>
+                        From a small town
+                        <span>to the nation.</span>
+                    </h2>
+
+                    <p>
+                        His journey reflected determination, curiosity, humility and an unwavering belief in India's potential.
+                    </p>
+
+                </div>
+
+
+                <div class="life-grid">
+
+                    <article class="life-card large reveal interactive-card">
+
+                        <div class="card-number">01</div>
+
+                        <h3>Early Life & Education</h3>
+
+                        <p>
+                            Born on 15 October 1931 in Rameswaram, Tamil Nadu, Avul Pakir Jainulabdeen Abdul Kalam grew up in a modest family.
+                        </p>
+
+                        <p>
+                            His early life shaped his discipline, curiosity and commitment to learning.
+                        </p>
+
+                        <div class="card-arrow">↗</div>
+
+                    </article>
+
+
+                    <article class="life-card reveal interactive-card">
+
+                        <div class="card-number">02</div>
+
+                        <h3>Scientist & Engineer</h3>
+
+                        <p>
+                            Kalam worked with DRDO and ISRO and played an important role in India's space and missile development programmes.
+                        </p>
+
+                        <div class="card-arrow">↗</div>
+
+                    </article>
+
+
+                    <article class="life-card reveal interactive-card">
+
+                        <div class="card-number">03</div>
+
+                        <h3>People's President</h3>
+
+                        <p>
+                            He served as the 11th President of India from 2002 to 2007 and became widely known as the "People's President."
+                        </p>
+
+                        <div class="card-arrow">↗</div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUOTE ================= -->
+
+        <section class="quote-section">
+
+            <div class="container">
+
+                <div class="quote-card reveal">
+
+                    <div class="quote-mark">“</div>
+
+                    <blockquote id="quoteText">
+                        Dream, dream, dream.
+                    </blockquote>
+
+                    <div class="quote-line"></div>
+
+                    <p>— Dr. A.P.J. Abdul Kalam</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TIMELINE ================= -->
+
+        <section class="section timeline-section" id="timeline">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">02 / TIMELINE</span>
+
+                    <h2>
+                        Milestones of a
+                        <span>remarkable life.</span>
+                    </h2>
+
+                    <p>
+                        Click any milestone to explore the journey.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal active-timeline">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">1931</span>
+
+                    <span class="timeline-title">
+                        Born in Rameswaram
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            Abdul Kalam was born on 15 October 1931 in Rameswaram, Tamil Nadu.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">1960</span>
+
+                    <span class="timeline-title">
+                        Joined DRDO
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            He began his career as a scientist at the Defence Research and Development Organisation.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">1969</span>
+
+                    <span class="timeline-title">
+                        Joined ISRO
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            Kalam joined the Indian Space Research Organisation and contributed to India's space programme.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">1980</span>
+
+                    <span class="timeline-title">
+                        SLV-III Mission
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            The successful SLV-III mission placed the Rohini satellite into near-Earth orbit.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">1997</span>
+
+                    <span class="timeline-title">
+                        Bharat Ratna
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            He was awarded the Bharat Ratna for his contribution to science and public service.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">2002</span>
+
+                    <span class="timeline-title">
+                        Became President of India
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            Kalam became the 11th President of India and served from 2002 to 2007.
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <button class="timeline-trigger">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">2015</span>
+
+                    <span class="timeline-title">
+                        Remembered Forever
+                    </span>
+
+                    <span class="timeline-plus">+</span>
+
+                </button>
+
+                        <div class="timeline-details">
+                            Dr. Kalam passed away on 27 July 2015 while doing what he loved — teaching students.
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEGACY ================= -->
+
+        <section class="section legacy-section" id="legacy">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">03 / LEGACY</span>
+
+                    <h2>
+                        A legacy that
+                        <span>continues to inspire.</span>
+                    </h2>
+
+                    <p>
+                        His influence extends far beyond science and politics. His greatest legacy may be the dreams he inspired.
+                    </p>
+
+                </div>
+
+
+                <div class="legacy-grid">
+
+                    <article class="legacy-card reveal interactive-card">
+
+                        <div class="legacy-icon">01</div>
+
+                        <h3>Science & Technology</h3>
+
+                        <p>
+                            He played a major role in India's indigenous space and defence technology programmes.
+                        </p>
+
+                        <span class="legacy-line"></span>
+
+                    </article>
+
+
+                    <article class="legacy-card reveal interactive-card">
+
+                        <div class="legacy-icon">02</div>
+
+                        <h3>Education</h3>
+
+                        <p>
+                            Kalam believed education was one of the strongest tools for empowering young people.
+                        </p>
+
+                        <span class="legacy-line"></span>
+
+                    </article>
+
+
+                    <article class="legacy-card reveal interactive-card">
+
+                        <div class="legacy-icon">03</div>
+
+                        <h3>Vision for India</h3>
+
+                        <p>
+                            He encouraged citizens to imagine and work toward a developed, confident and innovative India.
+                        </p>
+
+                        <span class="legacy-line"></span>
+
+                    </article>
+
+                </div>
+
+
+                <div class="final-message reveal">
+
+                    <span class="final-line"></span>
+
+                    <p>
+                        "You have to dream before your dreams can come true."
+                    </p>
+
+                    <span class="final-author">
+                — Dr. A.P.J. Abdul Kalam
+            </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <div class="footer-logo">KALAM</div>
+
+                <p>
+                    A tribute to the People's President and a true inspiration to generations.
+                </p>
+            </div>
+
+            <div class="footer-right">
+
+                <span>OASIS INFOBYTE</span>
+                <span>LEVEL 2 · TASK 2</span>
+
+                <a href="#home">Back to top ↑</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Designed & developed by Shiva Prajapati
+            </p>
+
+            <p>
+                © <span id="year"></span> Tribute Page
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

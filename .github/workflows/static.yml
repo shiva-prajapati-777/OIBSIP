@@ -32,11 +32,13 @@ jobs:
           mkdir -p public/PersonalPortfolio
           mkdir -p public/TemperatureConverter
           mkdir -p public/Calculator
+          mkdir -p public/Calculator
 
           cp -r WebDev-L1-LandingPage/. public/LandingPage/
           cp -r WebDev-L1-PersonalPortfolio/. public/PersonalPortfolio/
           cp -r WebDev-L1-TemperatureConverter/. public/TemperatureConverter/
           cp -r WebDev-L2-Calculator/. public/Calculator/
+          cp -r WebDev-L2-TributePage/. public/TributePage/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4

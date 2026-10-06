@@ -4,6 +4,10 @@ A modern, responsive landing page created as part of the OASIS Infobyte Web Deve
 
 Nexa is a conceptual digital creative studio website designed to demonstrate clean HTML5/CSS3 structure, responsive layouts, modern UI design, animations, and user-friendly navigation.
 
+## 🌐 Live Demo
+
+https://shiva-prajapati-777.github.io/OIBSIP/LandingPage/
+
 📌 Internship Task
 
 Detail          

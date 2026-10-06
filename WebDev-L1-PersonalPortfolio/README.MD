@@ -2,6 +2,10 @@
 
 A modern, responsive and interactive personal portfolio website built using **HTML5, CSS3 and JavaScript**. The portfolio presents my education, technical skills, projects, achievements, certifications and contact information in a professional web interface.
 
+## 🌐 Live Demo
+
+https://shiva-prajapati-777.github.io/OIBSIP/PersonalPortfolio/
+
 ## ✨ Features
 
 - Responsive design for desktop, tablet and mobile devices

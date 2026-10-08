@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OIBSIP | Web Development Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+        
+        .header p {
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 18px;
+            color: #a78bfa;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #a78bfa;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #7c3aed;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #6d28d9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 32px;
+            }
+            body {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>OIBSIP Web Development Projects</h1>
+            <p>OASIS Infobyte Web Development & Designing Internship</p>
+        </header>
+
+        <section class="section">
+
+            <h2 class="section-title">Level 1</h2>
+
+            <div class="projects">
+
+                <div class="card">
+                    <h3>01. Landing Page</h3>
+                    <p>
+                        Nexa — Digital Experiences landing page developed for Level 1 Task 1.
+                    </p>
+
+                    <a class="btn" href="./LandingPage/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>02. Personal Portfolio</h3>
+                    <p>
+                        Professional personal portfolio showcasing skills, projects and certifications.
+                    </p>
+
+                    <a class="btn" href="./PersonalPortfolio/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>03. Temperature Converter</h3>
+                    <p>
+                        Interactive temperature conversion tool supporting Celsius, Fahrenheit and Kelvin.
+                    </p>
+
+                    <a class="btn" href="./TemperatureConverter/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2 class="section-title">Level 2</h2>
+
+            <div class="projects">
+
+                <div class="card">
+                    <h3>04. Calculator</h3>
+                    <p>
+                        Interactive calculator application developed for the Level 2 internship task.
+                    </p>
+
+                    <a class="btn" href="./Calculator/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>05. Tribute Page</h3>
+                    <p>
+                        Responsive tribute page created as part of the Level 2 web development tasks.
+                    </p>
+
+                    <a class="btn" href="./TributePage/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>06. To-Do Web App</h3>
+                    <p>
+                        Interactive task management application with add, edit, complete and delete functionality.
+                    </p>
+
+                    <a class="btn" href="./ToDo/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            © 2026 Shiva Prajapati · OASIS Infobyte Web Development & Designing Internship
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

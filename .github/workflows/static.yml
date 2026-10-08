@@ -35,6 +35,8 @@ jobs:
           mkdir -p public/TributePage
           mkdir -p public/ToDo
 
+          cp index.html public/index.html
+
           cp -r WebDev-L1-LandingPage/. public/LandingPage/
           cp -r WebDev-L1-PersonalPortfolio/. public/PersonalPortfolio/
           cp -r WebDev-L1-TemperatureConverter/. public/TemperatureConverter/

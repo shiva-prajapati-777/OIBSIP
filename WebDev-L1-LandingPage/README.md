@@ -352,18 +352,11 @@ The design uses different font sizes and weights to create clear visual hierarch
 
 Desktop View
 
-
-
 Mobile View
-
-
 
 Contact Section
 
-
-
 📁 Project Structure
-
 
 OIBSIP/
 
@@ -385,20 +378,15 @@ OIBSIP/
 
     └── contact.png
 
-
 ⚙️ How to Run
 
 Option 1 — Download/Clone the Repository
 
-
 git clone https://github.com/shiva-prajapati-777/OIBSIP.git
-
 
 Navigate into the project:
 
-
 cd OIBSIP
-
 
 Open index.html in your browser.
 

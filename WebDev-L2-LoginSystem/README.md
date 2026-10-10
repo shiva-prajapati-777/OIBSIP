@@ -111,19 +111,19 @@ Open the following URL in your browser:
 
 ### Registration Page
 
-![Registration Page](screenshots/register.png)
+![Registration Page](screenshots/Registration%20Page.png)
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/Login%20Page.png)
 
 ### Protected Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Protected Dashboard](screenshots/Protected%20Dashboard.png)
 
 ### Validation and Error Handling
 
-![Validation](screenshots/validation.png)
+![Validation and Error Handling](screenshots/Validation%20and%20Error%20Handling.png)
 
 ## Security Considerations
 

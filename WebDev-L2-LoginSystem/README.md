@@ -3,6 +3,9 @@
 **OASIS INFOBYTE Web Development Internship | Level 2 — Task 4**
 
 A full-stack authentication web application built with Node.js, Express, SQLite, and bcrypt. It allows users to register, log in securely, access a protected dashboard, and log out.
+Demo
+
+Live Demo: Not deployed.
 
 ## Features
 

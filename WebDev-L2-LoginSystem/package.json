@@ -1,0 +1,29 @@
+{
+    "name": "webdev-l2-loginsystem",
+    "version": "1.0.0",
+    "description": "OASIS INFOBYTE Level 2 Task 4 - Login Authentication System",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js"
+    },
+    "keywords": [
+        "authentication",
+        "nodejs",
+        "express",
+        "sqlite",
+        "oasis-infobyte"
+    ],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "better-sqlite3": "^13.0.3",
+        "dotenv": "^18.0.6",
+        "express": "^5.2.1",
+        "express-rate-limit": "^8.7.1",
+        "express-session": "^1.19.0",
+        "helmet": "^8.3.0"
+    }
+}
